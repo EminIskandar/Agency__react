@@ -29,7 +29,7 @@ function App() {
               <Route path="/career" component={Career} />   
               <Route path="/finance"   component={Finance} />   
               <Route path="/contact"   component={Contact} />   
-              <Route path="*"   component={Error} />   
+              <Route path="*" component={Error} />   
                
             </Switch> 
         <Footer/>    

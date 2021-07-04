@@ -10,6 +10,9 @@ import Index from './../components/about-index';
 //hook
 import  { useNavColor }  from './../hook/useNavColor'
 
+//error
+import Error from './error'
+
 
 export default function Product() {
 
@@ -28,24 +31,39 @@ export default function Product() {
             </Route> 
             <Route path={`${match.path}/:member`}>
                <Member/>
-            </Route>   
+            </Route>    
         </>
     ) 
 } 
 
 function Member(){ 
     let { member } = useParams(); 
-     
+
+    const [control, setControl] = React.useState(false)
+
+    React.useEffect(() => {
+        members.map((item)=>{
+            if(item.name.replace(' ','').includes(member)){
+               return setControl(true) 
+            }else{
+               return null
+            }
+        })
+    })
+
+
     const members = [
                         { name: 'Lou Gerstner', profession : 'General chairman' , img : 'Group_members1.jpg' ,path: 'LouGerstner' },
                         { name: 'Windlay Jonnhson', profession : 'Boxing Coach' , img : 'Group_members2.jpg' , path: 'WindlayJonnhson' },
                         { name: 'Susan Berk', profession : 'Running Coach' , img : 'Group_members3.jpg' , path: 'SusanBerk' },
                         { name: 'Adam Winberg', profession : 'Personal Trainer' , img : 'Group_members4.jpg' ,path: 'AdamWinberg' }
                     ] 
+  
     return (
          <>
           <main>
                {
+                  control ? 
                    members.map((info,i)=>{
                         if(info.path === member){
                             const img = require( `./../assets/img/${info.img}`)
@@ -68,7 +86,7 @@ function Member(){
                         }else{
                             return null
                         }
-                   })
+                   }) : <Error/>
                } 
           </main>
          </>
