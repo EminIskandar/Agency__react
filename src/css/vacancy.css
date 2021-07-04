@@ -1,0 +1,223 @@
+#Vacancies{
+    background-color: #F8F8F8;
+    padding: 70px 0 20px;
+    overflow: hidden;
+}
+.Vacancies__content{
+    padding: 70px 0;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+} 
+.Vacancies__name{
+    display: flex;
+    flex-direction: column;
+}
+.Vacancies__name button{
+    width: 330px;
+    height: 70px;
+    margin: 2px 0;
+    font-size:15px;
+    text-align: start;
+    padding-left: 50px;
+    cursor: pointer;
+    border: 1px solid rgb(216 216 216);
+    background-color: #fff;
+    border-radius: 2px; 
+    margin-left: -1px;
+    position: relative;
+    z-index: 5;
+} 
+.Vacancies__name button:focus{
+    border: 1px solid rgb(216 216 216);
+    box-shadow: none;
+    outline: none;
+}
+#Vacancies .ac-btn{
+    background-color: #F72619!important;
+    color: #fff!important;
+} 
+.Vacancies__about-job{
+    border: 1px solid #fff;
+    width: 870px;
+    border-left: 1px solid #F72619;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+#Vacancies .unactive {
+    visibility: hidden;
+    display: none;
+}
+#Vacancies .active{
+    visibility: visible;
+    display: block;
+    position: relative;
+    z-index: 10;
+}  
+.Job__title h6{
+    font: 14px 'Raleway', sans-serif;
+    color: #8c8c8c;
+    font-weight: 600; 
+   margin: 0;
+}
+#Vacancies h3{
+    font: 30px 'Raleway', sans-serif;
+}
+.Job__title h3{
+    margin: 5px 0;
+}
+.Job__title p{
+    font-size: 15px;
+    color: #8c8c8c;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.Job__description {
+    margin-top: 70px;
+}
+.Job__description h3{
+    margin: 20px 0;
+}
+.Job__description p{
+    line-height: 30px;
+    color: #8c8c8c;
+}
+.Job__title-list{
+    display: flex;
+
+}
+.Job__title-list ul:last-child{
+    margin-left: 70px;
+    font-weight: 600;
+    color: #777777;
+}
+.Job__title-list ul:first-child{
+    color: #8c8c8c;
+}
+.Job__title-list li{
+    margin: 5px 0;
+}
+.Job__requirements{
+    margin-top: 70px;
+}
+.Job__requirements h3{
+    margin: 20px 0;
+}
+.Job__requirements li{
+    font-size: 15px;
+    color: #aaaaab;
+    margin: 10px 20px 10px;
+}
+.Job__requirements li::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffafaa;
+    border-radius: 100%;
+    transform: translate(-20px, 4px);
+}
+.Job__benefits {
+    margin: 40px 0;
+}
+.Job__benefits h3{
+    margin: 20px 0;
+}
+.Job__benefits-content ul:first-child{
+    margin-right: 150px;
+}
+.Job__benefits-content li{
+    margin: 5px 0;
+    font-size: 15px;
+    list-style: inherit;
+    color: #8c8c8c;
+}
+.Job__benefits-content h6{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: #8c8c8c;
+    margin-bottom: 5px;
+}
+#Vacancies ol{
+    padding-left: 17px;
+}
+.apply-now{
+    width: 150px;
+    height: 50px;
+    border: double 3px transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(to right,#743ad5, #d53a9d);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+.apply-now:hover{
+    background-image: linear-gradient(to right,#743ad5, #d53a9d);
+}
+.apply-now:hover span{
+    color: #fff;
+}
+#Vacancies .up{
+    animation: v-up .2s cubic-bezier(0.11, 0.81, 0.29, 0.74) forwards;
+}
+@keyframes v-up{
+    from{ transform: translateY(1474px)};
+    to{ transform: translateY(0px)}
+}
+@media screen and (max-width:1220px){
+    .Vacancies__content{
+        width: 1030px;
+    } 
+    .Vacancies__name button{
+        width: 260px;
+    } 
+}
+@media screen and (max-width:992px){
+    .Vacancies__content{
+        width: 840px;
+        padding: 70px 20px;
+        display: flex;
+    }
+    .Vacancies__about-job-item{
+        width: 58vw; 
+        position: relative;
+    }   
+}
+@media screen and (max-width:790px){
+    .Vacancies__about-job-item{
+        width: 90vw;
+        border: 1px solid rgb(230 226 226);
+        padding: 20px ;
+        margin-top: -30px;
+        box-sizing: border-box;
+    }
+    .Vacancies__content{
+        display: block;
+        padding: 0;
+        width: 91%;
+        margin: 0 auto;
+    } 
+    .Vacancies__about-job{
+        border: none; 
+        padding: 20px 0;
+    }
+    .Vacancies__name button{
+        width: 90vw;
+        height: 50px;
+        background: none;
+        color:  #888888;
+    } 
+    .Vacancies__name button:first-child {
+        background-color: transparent;
+        color: #888888;
+    } 
+} 

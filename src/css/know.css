@@ -1,0 +1,108 @@
+.Know__content{
+    width: 100vw;
+    height: 1020px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+  }
+  .Know__background-image{
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+  }
+  .Know__background-image img{
+    height:100%;
+  }
+  .Know__activities, .Know__text{
+    position: relative;
+    z-index: 5;
+  } 
+  .Know__text{
+    width: 840px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    padding-top:105px ;
+  }
+  .Know__text h1{
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+  }
+  .Know__text h4{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 15px 0 0;
+  }
+  .Know__text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 50px;
+    font-weight: 400;
+  }
+  .Know__activities{
+    width: 850px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Know__activities-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Know__activities-item h2{
+    margin: 0;
+    font: 22px 'Raleway', sans-serif;
+    font-weight: 400;
+  }
+  .Activities__item-count{
+    background-image: linear-gradient(to right,#743ad5, #d53a9d);
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(70px, -53px);
+  }
+   @media screen and (max-width:996px){
+    .Know__text,.Know__activities{
+      width: 70vw;
+    }
+   }
+   @media screen and (max-width:768px){ 
+    .Know__content {
+      display:block;
+      height: auto;
+       padding-bottom: 80px;
+    }
+    .Know__text , .Know__activities{
+      transform: translateY(100px);
+    }
+    .Know__activities{
+      flex-direction: column;
+    }
+    .Activities__item-image{
+      height: 190px;
+    }
+    .Know__activities-item{
+      margin-bottom: 40px;
+    }
+  } 

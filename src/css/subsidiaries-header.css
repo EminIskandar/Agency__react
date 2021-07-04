@@ -1,0 +1,42 @@
+.Subsidiaries__header{
+    background-image: url(../assets/img/Subsidiaries_background.jpg);
+    background-position: center -35px;
+    width: 100vw;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.Subsidiaries__text{
+    margin-top: 105px;
+}
+.Subsidiaries__text h4,
+.Subsidiaries__text h1,
+.Subsidiaries__text p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.Subsidiaries__text h4{
+    font-size: 14px;
+    color: #aaaaab;
+    font-weight: 400;
+}
+.Subsidiaries__text h1{
+    font-size: 30px;
+    margin: 10px 0;
+}
+.Subsidiaries__text p{
+    color: #aaaaab;
+    width: 801px;
+    font-size: 20px;
+}
+@media screen and (max-width:1220px){
+    .Subsidiaries__text p{
+        width: 90vw;
+    }
+}

@@ -1,0 +1,253 @@
+#Subsidiaries__companies{
+    background-color: #F8F8F8;
+    padding: 70px 0 20px;
+    overflow: hidden;
+}
+.Subsidiaries__companies-content{
+    padding: 70px 0;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+.Companies__image{
+    margin-bottom: 50px;
+    width: 686px;
+}
+.Companies__name{
+    display: flex;
+    flex-direction: column;
+}
+.Companies__name button{
+    width: 330px;
+    height: 70px;
+    margin: 2px 0;
+    font-size:15px;
+    text-align: start;
+    padding-left: 50px;
+    cursor: pointer;
+    border: 1px solid rgb(216 216 216);
+    background-color: #fff;
+    border-radius: 2px; 
+    margin-left: -1px;
+    position: relative;
+    z-index: 5;
+}
+.ac-btn{
+    background-color: #F72619!important;
+    color: #fff!important;
+}
+.Companies__name button:focus{
+    border: 1px solid rgb(216 216 216);
+    box-shadow: none;
+    outline: none;
+}
+.Companies__short-info{
+    border: 1px solid #fff;
+    width: 870px;
+    border-left: 1px solid #F72619;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+.unactive {
+    visibility: hidden;
+    display: none;
+}
+.active{
+    visibility: visible;
+    display: block;
+    position: relative;
+    z-index: 10;
+}
+.Companies__about h6{
+    font: 14px 'Raleway', sans-serif;
+    color: #8c8c8c;
+    font-weight: 600;
+    margin: 0;
+}
+#Subsidiaries__companies h3{
+    font: 30px 'Raleway', sans-serif;
+}
+.Companies__about h3{
+    margin: 5px 0;
+}
+.Companies__about p{
+    font-size: 15px;
+    color: #8c8c8c;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.Companies__our-process , .Companies__award{
+    margin-top: 70px;
+}
+.Companies__our-process li{
+    font-size: 15px;
+    color: #aaaaab;
+    margin: 10px 20px 10px;
+} 
+.Companies__our-process li::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffafaa;
+    border-radius: 100%;
+    transform: translate(-20px, 4px);
+}
+.Companies__award-items{
+    display: flex;
+}
+.Companies__award-items ul:first-child{
+    margin-right: 150px;
+}
+.Companies__award-items li{
+    margin: 40px 0;
+    font-size: 15px;
+}
+.Companies__award-items h6{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: #8c8c8c;
+    margin-bottom: 5px;
+}
+.Companies__galery{
+    width: 686px; 
+    overflow: hidden;
+}
+.Galery__items{
+    display: flex;
+    width: 686px;
+    height: 421px;
+} 
+.Galery__item{
+    transition: all .7s ease;
+}
+.Galery__nav{
+    position: relative;
+    z-index: 21;
+}
+.Galery__nav ul{
+    display: flex;
+    justify-content: center;
+}
+.Galery__nav li{
+    width: 11px;
+    height: 11px;
+    background: #000;
+    margin: 5px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.arrow{
+    width: 40px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+.Companies__item:hover .arrow{
+    opacity: 1;
+}
+.Galery__nav-arrow {
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+}
+.up{
+    animation: s-up .2s cubic-bezier(0.11, 0.81, 0.29, 0.74) forwards;
+}
+@keyframes s-up{
+    from{ transform: translateY(1474px)};
+    to{ transform: translateY(0px)}
+}
+@media screen and (max-width:1220px){
+    .Subsidiaries__companies-content{
+        width: 1030px;
+    }
+    .Companies__name button{
+        width: 260px;
+    }
+    .Companies__image {
+        width: 60vw;
+    }
+}
+@media screen and (max-width:992px){
+    .Subsidiaries__companies-content{
+        width: 840px;
+        padding: 70px 20px;
+        display: flex;
+    }
+    .Companies__item{
+        width: 58vw; 
+        position: relative;
+    }
+    .Galery__items{
+        display: flex;
+        width: 521px;
+        height: 320px;
+        overflow: hidden;
+    }
+    .Galery__item img {
+        height: 320px;
+    }
+    .Companies__award-items ul:first-child {
+        margin-right: 90px;
+    }
+    .Galery__nav{
+        width: 520px;
+    }
+}
+@media screen and (max-width:790px){
+    .Companies__item{
+        width: 90vw;
+        border: 1px solid rgb(230 226 226);
+        padding: 20px ;
+        margin-top: -30px;
+        box-sizing: border-box;
+    }
+    .Subsidiaries__companies-content{
+        display: block;
+        padding: 0;
+        width: 91%;
+        margin: 0 auto;
+    } 
+    .Companies__short-info{
+        border: none; 
+        padding: 20px 0;
+    }
+    .Companies__name button{
+        width: 90vw;
+        height: 50px;
+        background: none;
+        color:  #888888;
+    }
+    .Companies__name button:first-child {
+        background-color: transparent;
+        color: #888888;
+    }
+    .Companies__galery{
+        width: 100%;
+        position: relative;
+    }
+    .Galery__items  , .Galery__nav {
+        width: 100%;
+    } 
+    .Galery__item img{
+        width: 85vw;
+    }
+    .Companies__image {
+        width: 98.2%;
+    }
+}
+@media screen and (max-width:480px){ 
+    .Galery__item img{
+        width: 350px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0px);
+    }
+}

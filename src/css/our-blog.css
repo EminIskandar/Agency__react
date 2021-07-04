@@ -1,0 +1,107 @@
+#Our-blog{
+    width: 1200px;
+    margin: 0 auto;
+}
+.Our-blog__header{
+    text-align: center;
+    padding: 70px;
+}
+.Our-blog__header p {
+    color: #0a0a0a;
+    font-size: 14px;
+}
+.Our-blog__header h3{
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+.Our-blog__articles {
+    display: flex;
+    flex-direction: column;
+}
+.Our-blog__article-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+.Our-blog__article-text{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-size: 14px;
+    color: #888888;
+    margin: 5px;
+    padding: 0;
+}
+.title{
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+.text{
+    font-size: 16px;
+    line-height: 35px;
+    color: #9a9696;
+}
+.read_more{
+    width: 150px;
+    height: 50px;
+    margin: 40px 0 0 0 ;
+    border: double 3px transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(to right,#743ad5, #d53a9d);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    text-decoration: none;
+    text-align: center;
+}
+.read_more:hover{
+    background-image: linear-gradient(to right,#743ad5, #d53a9d);
+}
+.read_more:hover span{
+    color: #fff;
+}
+.read_more span{
+    position: relative;
+    color: #404040;
+    font-weight: 600;
+    transition: all .4s ease; 
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+@media screen and (max-width:1220px){
+    #Our-blog{
+        width: 90vw;
+    }
+    .Our-blog__article-image img{
+        width: 40vw;
+    }
+}
+@media screen and (max-width:996px){
+    .Our-blog__article-image{
+        display: none;
+    }
+    .Our-blog__article-text{
+        width: 90vw;
+    }
+}
+@media screen and (max-width:480px){
+    .Our-blog__header{ 
+        padding: 50px;
+    }
+}
+@media screen and (max-width:320px){
+    #Our-blog {
+        width: 80vw;
+    }
+}

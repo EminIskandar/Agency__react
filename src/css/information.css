@@ -1,0 +1,125 @@
+.General-information, .Graphic-information{
+    display: flex;
+    align-items: center;
+}
+.General-information .text img,
+.Graphic-information .text img{
+    margin-top: 70px;
+}
+#Finance__information .text h4,
+#Finance__information .text h1,
+#Finance__information .text p{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+#Finance__information .text h4{
+    font-size: 14px;
+    color: #aaaaab;
+    font-weight: 400;
+}
+#Finance__information .text h1{
+    font-size: 30px;
+    margin: 10px 0;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 70px;
+    width: 500px;
+}
+#Finance__information .text p{
+    color: #aaaaab;
+    width: 601px;
+    font-size: 16px;
+    line-height: 30px;
+}
+.General-information__image,
+.Graphic-information__image{
+    width: 55%;
+    height: 1070px;
+    overflow: hidden;
+}
+.General-information__image:last-child img,
+.Graphic-information__image:last-child img{
+    height: 100%;
+}
+#Finance__information .item:first-child{
+    display: flex;
+    align-items: center;
+}
+.General-information__content,
+.Graphic-information__content{
+    margin: 0 auto;
+    width: 50%;
+    padding: 0 40px;
+}
+.Invesment-information {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.Invesment-information .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.Invesment-information .text h1,
+.Invesment-information .text h4,
+.Invesment-information .text p{ 
+    margin: 0;
+    width: auto;
+}
+.Invesment-information .text p{ 
+    font-size: 18px;
+    width: 800px;
+    color: #777777;
+    margin-top: 20px;
+}
+.Invesment-information .text h1{
+    margin-top: 10px;
+}
+.Invesment-information img{
+    margin: 70px 0 0 ;
+}
+@media screen and (max-width:1220px){
+    .Invesment-information img{
+        width: 1000px;
+    }
+    .General-information__content,
+    .Graphic-information__content{
+        width: 40%;
+    }
+    #Finance__information .text p , #Finance__information .text h1, .General-information .text img , .Graphic-information  .text img{
+        width: 100%;
+    }
+}
+@media screen and (max-width:992px){
+    .Invesment-information img{
+        width: 800px;
+    }
+    .Invesment-information .text p{
+        width: 90vw;
+    }
+}
+@media screen and (max-width:768px){
+    .General-information__image,
+    .Graphic-information__image{
+        display: none;
+    }
+    .General-information__content,
+    .Graphic-information__content{
+        width: auto;
+        padding: 40px 0 ;
+    }
+    #Finance__information .text p , #Finance__information .text h1{
+        width: 90vw!important;
+    }
+    .General-information .text img , .Graphic-information .text img{
+        width: 80vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .Invesment-information img{
+        width: 90vw;
+    }
+}

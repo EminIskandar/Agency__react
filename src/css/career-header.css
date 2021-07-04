@@ -1,0 +1,101 @@
+.Career__header{
+    width: 100vw;
+    height: 843px;
+    padding: 105px 0 0;
+    background-image: url(../assets/img/Career_background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.Career__text{
+    width: 60vw;
+} 
+.Career__text h4,
+.Career__text h1,
+.Career__text p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.Career__text h4{
+    font-size: 14px;
+    color: #aaaaab;
+    font-weight: 400;
+}
+ .Career__text h1{
+    font-size: 30px;
+    margin: 10px 0;
+}
+.Career__text p{
+    color: #aaaaab;
+    font-size: 18px;
+}
+.Career__sections{
+    width: 1150px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.Career__sections-item  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+} 
+.Career__sections-item h2{
+    margin: 20px 0; 
+    font: 22px 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.Career__sections-item p{
+    width: 250px;
+    margin: 0;
+    font: 17px 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #aaaaab;;
+} 
+.p-up{
+    animation: c-up .3s ease forwards;
+}
+.p-fadeIn{
+    animation: c-fade-in .4s ease forwards;
+}
+@keyframes c-up{
+    from{ transform: translateY(180px)};
+    to{ transform: translateY(0px)}
+}
+@keyframes c-fade-in{
+    from{ height: 0;};
+    to{ height: .4s;}
+}
+@media screen and (max-width:1220px){
+    .Career__sections{
+        width: 90vw;
+    }
+    .Career__text{
+        width: 85vw;
+    } 
+}
+@media screen and (max-width:992px){
+    .Career__sections-item p{
+        width: 200px;
+    } 
+}
+@media screen and (max-width:768px){
+    .Career__header{
+        height: 1220px;
+        background-size: auto 1220px;
+    }
+    .Career__sections, .Select_process_section , .Select_process_section_item{
+        flex-direction: column;
+    }
+    .Career__sections-item{
+        margin: 20px 0;
+    }  
+} 

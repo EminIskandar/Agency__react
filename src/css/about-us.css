@@ -1,0 +1,117 @@
+.About-us{
+    margin: 0 auto;
+    width: 1200px;
+}
+.About-us__header{
+    width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 70px 0;
+}
+.About-us__header p{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+.About-us__header h6{
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 10px;
+    padding: 0;
+}
+.About-us__header span{
+    font-size: 20px;
+    color: #a7a7a7;
+}
+.About-us__content{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.About-us__content-item{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border: 1px solid #e2e2e2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #1D2671;
+    padding: 25px;
+}
+.About-us__content-title{
+    font-size: 25px;
+    transition: all .2s ease-in;
+}
+.About-us__content-item img{
+    width: 100px;
+    transition: all .2s ease-in;
+}
+.About-us__content-item:hover{
+   box-shadow: 0px 0px 5px 4px #f3f3f3;
+   color:#C33764; 
+}
+.About-us__content-item:hover img {
+    width: 70px;  
+    transform: translateY(-55px);  
+}
+.About-us__content-item:hover .About-us__content-explanation{
+    visibility: visible;
+    opacity: 1;
+} 
+.About-us__content-item:hover .About-us__content-title{
+    font-size: 20px;
+    transform: translateY(55px); 
+}
+.About-us__content-explanation{
+    color: #d1d1d1;
+    font-size: 14px;
+    text-align: center;
+    transition: opacity .4s ease .2s;
+    position: absolute;
+    width: 300px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(24px);
+}
+@media screen and (max-width:1220px){
+    .About-us{
+        width: auto;
+    }
+    .About-us__content{
+        width: 90vw;
+        margin: 0 auto;
+    }
+    .About-us__content-item{
+        width: 30vw;
+        height: 30vw;
+    }
+}
+@media screen and (max-width:996px){
+    .About-us__header{
+        width: 80vw;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:768px){
+    .About-us__header{
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .About-us__content-item{
+        width: 80vw;
+        height: 40vw;
+    }
+    .About-us__content-explanation{
+        width: 70vw;
+    }
+}
+@media screen and (max-width:480px){
+    .About-us__content-item{
+        height: 240px;
+    }
+}

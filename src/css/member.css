@@ -1,0 +1,111 @@
+.Personal__content{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 900px;
+}
+.Personal__info-content{
+    width: 1200px;
+    height: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Personal__info{
+    width: 100vw;
+}
+.Personal__image{
+    position: absolute;
+    right: 0; 
+    width: 50%;
+    height: 890px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Footer{
+    margin-top: -10px;
+}
+.Personal__info-content p{
+    width: 500px;
+    line-height: 30px;
+    font-size: 16px;  
+    color: #a0a0a0;
+}
+.Personal__info-content img{
+    width: 231px;
+    margin-top: 20px;
+}
+p.second {
+    margin-top: 40px;
+}
+br{
+    margin: 40px 0 ;
+}
+.Personal__content h4{ 
+    font: 30px 'Raleway', sans-serif;
+    text-transform:uppercase;
+    font-weight: 400;
+    font-size: 14px;  
+    margin: 40px 0 0;
+}
+.Personal__content h6{ 
+    font-size: 16px;
+    text-transform:uppercase;
+    color: #a0a0a0;
+    font-weight: 400;
+    margin: 0;
+}
+.Personal__content h2{
+    font: 30px 'Raleway', sans-serif;
+    font-weight: 400;
+    width: 460px;
+    margin: 40px 0;
+}
+@media screen and (max-width:1220px){
+    .Personal__content{
+        padding: 0 40px;
+    }
+    .Personal__info-content{
+        margin: 0;
+        width: 600px;
+    }
+    .Personal__image{
+        width: 42%;
+    }
+}
+@media screen and (max-width:992px){
+    .Personal__content{
+        flex-direction: column;
+        height: auto;
+        padding: 0 20px;
+        width: 90vw;
+    }
+    .Personal__info {
+        width: 90vw;
+    }
+    .Personal__image{
+        position: relative; 
+    }
+    .Personal__info-content{
+        margin: 0;
+        width: 90vw;
+        height: auto;
+        padding: 70px 0;
+    }
+    .Personal__info-content p{
+        width: auto;
+    }
+    .Personal__image{
+        width: 90vw;
+        height: auto;
+        padding: 0 0 70px;
+    }
+}
+@media screen and (max-width:480px){
+    .Personal__content h2{
+        width: 90vw;
+    }
+}

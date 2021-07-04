@@ -1,0 +1,133 @@
+#Achievements{
+    background-color: #F8F8F8;
+    background-image: url(../assets/img/bg.png);
+    background-position: 800px , -100px;
+    background-repeat: no-repeat ;
+}
+.Achievements__content{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 70px;
+}
+.Achievements__title p{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+.Achievements__title h3{
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+.Achievements__timeline-item{
+    display: flex;
+    margin: 50px 0;
+}
+ 
+.Timeline__item-text_content{
+    margin-left: 65px;
+}
+.Timeline__item-text_content p{
+    width: 620px;
+}
+.Timeline__item-text_content h3{
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+.Timeline__item-year{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    width: 100px;
+}
+.Achievements__dots .dot{
+    width: 13px;
+    height: 13px;
+    background: #9A9A9A;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2
+}
+.Achievements__dots .dot::after{
+    width: 17px;
+    height: 17px;
+    content: '';
+    position: absolute;
+    border : 1px solid #cccbcb;
+    border-radius: 15px;
+    transform: translate( -3px , -3px);
+}
+.Achievements__dots .dot:hover{
+    background: -webkit-linear-gradient( left , #743ad5, #d53a9d);
+}
+.Achievements__dots {
+    position: absolute;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Achievements__lines{
+    transform: translate(122px, 25px);
+    position: absolute;
+}
+.Achievements__line{
+    width: 1px;
+    height: 450px;
+    position: absolute;
+    background-color: #e0d0d0;
+    transform: translate(6px,0);
+} 
+@media screen and (max-width:1200px){
+    .Achievements__content{
+        width: calc(100vw - 140px);
+    }
+}
+@media screen and (max-width:996px){
+    #Achievements{
+        background-position: 0  0;
+        padding: 70px 0;
+    }
+    .Achievements__content{
+        width: calc(100vw - 40px);;
+        padding: 0 20px ;
+    }
+    .Timeline__item-text{
+        margin: 0;
+    }
+    .Achievements__lines{
+        transform: translate(120px, 25px);
+    }
+    .Timeline__item-text_content h3{
+        font-size: 30px;
+    }
+    .Timeline__item-text_content p{
+        font-size: 15px;
+        width: 50vw;
+    }
+}
+@media screen and (max-width:768px){
+    .Achievements__lines{
+        display: none;
+    }
+}
+@media screen and (max-width:600px){
+    .Achievements__timeline-item{
+        display: block;
+    }
+    .Timeline__item-text_content{
+        margin: 0;
+    }
+    .Timeline__item-text_content p{
+        font-size: 15px;
+        width: 90vw; 
+    }
+    .Achievements .read-more{
+        margin: 0;
+    }
+}
