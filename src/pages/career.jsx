@@ -1,10 +1,7 @@
 import React from 'react'
 
 //component
-import Header from './../components/career-header'
-import Select from './../components/select-process'
-import Vacancy from './../components/vacancy'
-import Subscribe from './../components/subscribe'
+import {  CareerHeader, CareerSelect, CareerSubscribe, CareerVacancy } from 'components'
 
 //hook
 import  { useNavColor }  from './../hook/useNavColor'
@@ -21,10 +18,10 @@ export default function Career() {
 
     return (
         <main  >
-            <Header/>
-            <Select/>
-            <Vacancy/>
-            <Subscribe/>
+            <CareerHeader/>
+            <CareerSelect/>
+            <CareerVacancy/>
+            <CareerSubscribe/>
         </main>
     )
 }

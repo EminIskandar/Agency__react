@@ -1,27 +1,8 @@
-@import "css/header.css";
-@import "css/footer.css";
-@import "css/about-us.css";
-@import "css/our-blog.css";
-@import "css/achievements.css";
-@import "css/partner.css";
-@import "css/slider.css";
-@import "css/testimonial.css";
-@import "css/know.css";
-@import "css/members.css";
-@import "css/member.css";
-@import "css/contact.css";
-@import "css/finance-header.css";
-@import "css/information.css";
-@import "css/subsidiaries-header.css";
-@import "css/sub-companies.css";
-@import "css/career-header.css";
-@import "css/select-process.css";
-@import "css/vacancy.css";
-@import "css/subscribe.css";
-@import "css/error.css";
-
 body{
     overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
 h1,h2,h3,h4,h5,h6,p{
     margin: 0;

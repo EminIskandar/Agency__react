@@ -1,0 +1,76 @@
+.Contact__form{
+    background-image: url(../../../assets/img/Contact-bg.jpg);
+    width: 100vw;
+    height: 400px;
+    padding: 205px 0 100px;
+}
+.Contact__title h3{
+    text-align: center;
+    color: #fff;
+    font: 32px 'Poppins', sans-serif;
+    font-weight: 300;
+}
+.Contact__inputs{
+    font-size: 14px;
+    color: #fff;
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #888888;
+    width: 47ch;
+    padding: 20px 0;
+    color: #fff;
+}
+.Message input{
+    width: 100ch;
+}
+input:focus{
+    outline: none;
+    border-color: #fff;
+}
+.Email,.Subject,.Message{
+    margin: 50px 50px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+ form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Send_button{
+    width: 200px!important;
+    height: 50px;
+    border: double 3px transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(to right bottom,#f7d40f, #f7320f,#30bbf1);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 70px;
+}
+@media screen and (max-width:992px){
+    .Contact__inputs{
+        flex-direction: column;
+        width: 90vw;
+    }
+    input{
+        width: 85vw!important;
+    }
+    .Contact__form{
+        height: auto;
+    }
+}

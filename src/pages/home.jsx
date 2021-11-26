@@ -1,12 +1,7 @@
 import React from 'react'
 
 //compnent
-import Slider from '../components/slider'
-import AboutUs from '../components/about-us'
-import OurBlog from '../components/our-blog'
-import Achievements from '../components/achievements'
-import Testimonial from '../components/testimonial'
-import Partner from '../components/partner'
+import {HomeAbout, Achievements, HomeBlog, HomeSlider, HomeTestimonial, Partner } from 'components'
 
 //hook
 import  { useNavColor }  from './../hook/useNavColor'
@@ -26,11 +21,11 @@ export default function Home() {
 
     return (
         <main>
-            <Slider/>
-            <AboutUs/>
-            <OurBlog/>
+            <HomeSlider/>
+            <HomeAbout/>
+            <HomeBlog/>
             <Achievements/>
-            <Testimonial/>
+            <HomeTestimonial/>
             <Partner/>
         </main>
     )

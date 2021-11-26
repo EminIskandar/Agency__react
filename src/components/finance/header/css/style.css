@@ -1,0 +1,113 @@
+.Finance__header{
+    width: 100vw;
+    height: 843px;
+    background-image: url(../../../../assets/img/team-work.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+.Finance__title{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin-top: 135px;
+}
+.Finance__title h4,
+.Finance__title h1,
+.Finance__title p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.Finance__title h4{
+    font-size: 14px;
+    color: #aaaaab;
+    font-weight: 400;
+}
+.Finance__title h1{
+    font-size: 30px;
+    margin: 10px 0;
+}
+.Finance__title p{
+    color: #aaaaab;
+    width: 801px;
+    font-size: 18px;
+}
+.Finance__short-info{
+    width: 1100px;
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.Short-info__item h3{
+    font: 48px 'Poppins', sans-serif;
+    font-weight: 800;
+}
+.Short-info__item h6{
+    font: 20px 'Poppins', sans-serif;
+    font-weight: 800;
+    margin: 0px 0 20px;
+}
+.Short-info__item p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #8c8c8c;
+}
+.Short-info__item{
+    width: 330px;
+    height: 250px;
+    border: 3px solid #fff;
+    text-align: center;
+    padding: 40px 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.Short-info__item:hover{
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-color: transparent;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+@media screen and (max-width:1220px){
+    .Finance__short-info{
+        width: 900px;
+    }
+    .Short-info__item{
+        width: 270px;
+        padding: 30px;
+    }
+}
+@media screen and (max-width:992px){
+    .Finance__short-info{
+        width: 750px;
+    }
+    .Finance__title p{
+        width: 90vw;
+    }
+    .Short-info__item{
+        width: 230px;
+        height: 230px;
+        padding: 30px 10px;
+    }
+}
+@media screen and (max-width:768px){
+    .Finance__header{
+        height: 1350px;
+    }
+    .Finance__short-info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+    }
+    .Short-info__item{
+        margin: 20px 0;
+    }
+}

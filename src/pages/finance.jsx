@@ -1,8 +1,6 @@
 import React from 'react'
 //component
-import Header from  './../components/finance-header'
-import Information from  './../components/information'
-import Partner from  './../components/partner'
+import { FinanceHeader, FinanceInformation, Partner } from 'components'
 
 //hook
 import  { useNavColor }  from './../hook/useNavColor'
@@ -20,8 +18,8 @@ export default function Finance() {
     
     return (
         <main>
-            <Header/>
-            <Information/>
+            <FinanceHeader/>
+            <FinanceInformation/>
             <Partner/>
         </main>
     )

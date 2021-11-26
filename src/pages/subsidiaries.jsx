@@ -1,11 +1,10 @@
 import React from 'react'
 
 //components
-import Header from './../components/subsidiaries-header'
-import Companie from './../components/sub-companies'
+import { SubCompanies, SubHeader } from 'components'
 
 //hook
-import  { useNavColor }  from './../hook/useNavColor'
+import  { useNavColor }  from '../hook/useNavColor'
 
 export default function Subsidiaries() {
 
@@ -13,14 +12,14 @@ export default function Subsidiaries() {
     
     const [changeColor] = useNavColor()
 
-    React.useEffect(() => { 
+    React.useEffect(() => {  
          changeColor(2,'black') 
     } ) 
     
     return (
         <main>
-            <Header/>
-            <Companie/>
+            <SubHeader/>
+            <SubCompanies/>
         </main>
     )
 }
